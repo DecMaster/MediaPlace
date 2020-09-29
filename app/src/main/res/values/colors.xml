@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Android par défaut -->
+    <color name="colorPrimary">#c79cff</color>
+    <color name="colorPrimaryDark">#c79cff</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="transparent">#00000000</color>
+    <color name="hint">#888888</color>
+
+    <!-- Header par défaut -->
+    <color name="colorVioletHeader">#c79cff</color>
+    <color name="colorMenuVioletHeader">#d6b8ff</color>
+    <color name="colorVioletLight">#EBDCFF</color>
+    <!-- BackGround et autres gris -->
+    <color name="colorBackground">#434343</color>
+    <color name="colorButtonDarkGrey">#505050</color>
+    <color name="colorMediumGrey">#6f6f6f</color>
+    <color name="colorLightGrey">#8d8d8d</color>
+    <!-- Couleurs de catégories -->
+    <color name="colorMovieBlue">#98b2fa</color>
+    <color name="colorMovieBlueMenu">#c0d1fc</color>
+    <color name="colorShowGreen">#8ed87d</color>
+    <color name="colorShowGreenMenu">#bde2c7</color>
+    <color name="colorBookYellow">#ffe26a</color>
+    <color name="colorBookYellowMenu">#fdf1ba</color>
+    <color name="colorVideoGamesRed">#ff8181</color>
+    <color name="colorVideoGamesRedMenu">#f5bebc</color>
+
+
+    <color name="colorRedDelete">#ff9696</color>
+
+</resources>

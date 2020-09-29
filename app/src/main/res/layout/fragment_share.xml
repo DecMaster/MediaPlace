@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    android:id="@+id/share_constraint_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.share.ShareFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:fillViewport="true"
+        tools:background="@color/colorBackground">
+
+        <!-- Linear Layout Vertical General -->
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="30dp"
+            android:paddingTop="50dp"
+            android:paddingRight="30dp">
+
+            <!--Label Biblio -->
+            <TextView
+                android:id="@+id/boutons_biblio_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/share_message1"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"/>
+
+            <!-- Boutons Biblio & Checkmark -->
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="5dp">
+
+                <!-- Ligne Boutons Biblio -->
+                <LinearLayout
+                    android:id="@+id/line_1"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toTopOf="@+id/line_2">
+
+                    <ImageButton
+                        android:id="@+id/share_movie_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/share_moviebutton_off"
+                        android:layout_weight="1"
+                        android:scaleType="centerInside"
+                        android:adjustViewBounds="true"
+                        android:background="?attr/selectableItemBackgroundBorderless"
+                        android:layout_marginHorizontal="10dp"/>
+
+                    <ImageButton
+                        android:id="@+id/share_tvshow_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/share_seriesbutton_off"
+                        android:layout_weight="1"
+                        android:scaleType="centerInside"
+                        android:adjustViewBounds="true"
+                        android:background="?attr/selectableItemBackgroundBorderless"
+                        android:layout_marginHorizontal="10dp"/>
+
+                    <ImageButton
+                        android:id="@+id/share_book_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/share_bookbutton_off"
+                        android:layout_weight="1"
+                        android:scaleType="centerInside"
+                        android:adjustViewBounds="true"
+                        android:background="?attr/selectableItemBackgroundBorderless"
+                        android:layout_marginHorizontal="10dp"/>
+
+                    <ImageButton
+                        android:id="@+id/share_videogames_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/share_gamebutton_off"
+                        android:layout_weight="1"
+                        android:scaleType="centerInside"
+                        android:adjustViewBounds="true"
+                        android:background="?attr/selectableItemBackgroundBorderless"
+                        android:layout_marginHorizontal="10dp"/>
+
+                </LinearLayout>
+
+                <!-- Ligne Checkmark -->
+                <LinearLayout
+                    android:id="@+id/line_2"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/line_1">
+
+                    <ImageButton
+                        android:id="@+id/share_check1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_check"
+                        android:layout_weight="1"
+                        android:scaleType="centerInside"
+                        android:adjustViewBounds="true"
+                        android:background="?attr/selectableItemBackgroundBorderless"
+                        android:layout_marginHorizontal="10dp"/>
+
+                    <ImageButton
+                        android:id="@+id/share_check2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_check"
+                        android:layout_weight="1"
+                        android:scaleType="centerInside"
+                        android:adjustViewBounds="true"
+                        android:background="?attr/selectableItemBackgroundBorderless"
+                        android:layout_marginHorizontal="10dp"/>
+
+                    <ImageButton
+                        android:id="@+id/share_check3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_check"
+                        android:layout_weight="1"
+                        android:scaleType="centerInside"
+                        android:adjustViewBounds="true"
+                        android:background="?attr/selectableItemBackgroundBorderless"
+                        android:layout_marginHorizontal="10dp"/>
+
+                    <ImageButton
+                        android:id="@+id/share_check4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_check"
+                        android:layout_weight="1"
+                        android:scaleType="centerInside"
+                        android:adjustViewBounds="true"
+                        android:background="?attr/selectableItemBackgroundBorderless"
+                        android:layout_marginHorizontal="10dp"/>
+
+                </LinearLayout>
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <!--Label Infos -->
+            <TextView
+                android:id="@+id/categorie_share_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/share_message4"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"/>
+
+            <Spinner
+                android:id="@+id/spinner_share"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="20dp"/>
+
+            <!--Label Infos -->
+            <TextView
+                android:id="@+id/infos_share_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/share_message2"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"/>
+
+            <!-- Boutons Infos -->
+            <nf28.mediaplace.Views.NonScrollGridView
+                android:id="@+id/grid_share"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="none"
+                android:gravity="center"
+                android:columnWidth="100dp"
+                android:paddingLeft="12dp"
+                android:numColumns="3"
+                android:stretchMode="spacingWidthUniform"
+                android:verticalSpacing="5dp"
+                android:horizontalSpacing="-10dp"
+                android:layout_marginVertical="40dp"/>
+
+            <!--Nom Bibliothèque -->
+            <TextView
+                android:id="@+id/share_nomBiblio_indic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/share_message3"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"/>
+
+            <EditText
+                android:id="@+id/share_nomBiblio_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/share_tooltip"
+                android:textColorHint="@color/hint"
+                android:inputType="textShortMessage"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:textColor="#FFFFFF"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/share_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_button"
+                android:text="@string/share_buttonText"
+                android:layout_marginVertical="30dp"
+                android:layout_marginHorizontal="30dp"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:layout_gravity="bottom"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <!-- Boutons Partager Flottant
+    <Button
+        android:id="@+id/share_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_button"
+        android:text="@string/share_buttonText"
+        android:layout_marginVertical="30dp"
+        android:layout_marginHorizontal="30dp"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:layout_gravity="bottom"
+        android:textSize="20sp" />
+        -->
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

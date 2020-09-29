@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="e5d022ba-11e6-40d0-975a-ba32494b9768" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/lib/itextpdf-5.5.13.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/pdfbox-0.7.3.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/xml/provider_paths.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/nf28/mediaplace/Adapters/OeuvreAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nf28/mediaplace/Adapters/OeuvreAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/nf28/mediaplace/Adapters/SearchAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nf28/mediaplace/Adapters/SearchAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/nf28/mediaplace/Adapters/ShareInfoAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nf28/mediaplace/Adapters/ShareInfoAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/nf28/mediaplace/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nf28/mediaplace/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/nf28/mediaplace/ui/biblio/BiblioFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nf28/mediaplace/ui/biblio/BiblioFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/nf28/mediaplace/ui/biblio/BooksBiblioFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nf28/mediaplace/ui/biblio/BooksBiblioFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/nf28/mediaplace/ui/biblio/MoviesBiblioFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nf28/mediaplace/ui/biblio/MoviesBiblioFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/nf28/mediaplace/ui/biblio/SeriesBiblioFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nf28/mediaplace/ui/biblio/SeriesBiblioFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/nf28/mediaplace/ui/biblio/VideoGamesBiblioFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nf28/mediaplace/ui/biblio/VideoGamesBiblioFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/nf28/mediaplace/ui/home/HomeFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nf28/mediaplace/ui/home/HomeFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/nf28/mediaplace/ui/other/ShareFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nf28/mediaplace/ui/other/ShareFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/nf28/mediaplace/ui/search/SearchFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nf28/mediaplace/ui/search/SearchFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/nf28/mediaplace/ui/work/WorkFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nf28/mediaplace/ui/work/WorkFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/layout/fragment_share.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/fragment_share.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/layout/share_info_item.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/share_info_item.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/values/strings.xml" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view />
+      </state>
+    </system>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="D:\Robin\UTC\Cours\GI04\NF28\nf28-mediaplace-android\app\.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectId" id="1cXpEixz7hhEi5FvIwqYWl75UlU" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="PropertiesComponent">
+    <property name="android.sdk.path" value="D:/Android/android-sdk" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
+    <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e5d022ba-11e6-40d0-975a-ba32494b9768" name="Default Changelist" comment="" />
+      <created>1590684682350</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1590684682350</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

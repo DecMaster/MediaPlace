@@ -1,0 +1,75 @@
+<resources>
+
+    <!-- APPLICATION -->
+    <style name="AppThemeViolet" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorVioletHeader</item>
+        <item name="colorPrimaryDark">@color/colorBackground</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:actionOverflowButtonStyle">@style/ThemeBoutonHeader</item>
+    </style>
+    <style name="AppThemeMovie" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorMovieBlue</item>
+        <item name="colorPrimaryDark">@color/colorMovieBlueMenu</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:actionOverflowButtonStyle">@style/ThemeBoutonHeader</item>
+    </style>
+    <style name="AppThemeShow" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorShowGreen</item>
+        <item name="colorPrimaryDark">@color/colorShowGreenMenu</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:actionOverflowButtonStyle">@style/ThemeBoutonHeader</item>
+    </style>
+    <style name="AppThemeBook" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorBookYellow</item>
+        <item name="colorPrimaryDark">@color/colorBookYellowMenu</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:actionOverflowButtonStyle">@style/ThemeBoutonHeader</item>
+    </style>
+    <style name="AppThemeGame" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorVideoGamesRed</item>
+        <item name="colorPrimaryDark">@color/colorVideoGamesRedMenu</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:actionOverflowButtonStyle">@style/ThemeBoutonHeader</item>
+    </style>
+
+    <style name="ThemeBoutonHeader" parent="android:style/Widget.Holo.ActionButton.Overflow">
+        <item name="android:src">@drawable/ic_filter</item>
+    </style>
+
+    <style name="AppThemeViolet.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowBackground">@drawable/splash_screen</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+    <!-- ONGLETS -->
+
+    <style name="OngletsBiblio" parent="Widget.Design.TabLayout">
+        <item name="tabIndicatorColor">#FFFF</item>
+        <item name="tabIndicatorHeight">4dp</item>
+        <item name="tabPaddingStart">4dp</item>
+        <item name="tabPaddingEnd">4dp</item>
+        <item name="tabBackground">?attr/selectableItemBackground</item>
+        <item name="tabUnboundedRipple">true</item>
+        <item name="tabTextColor">#FFFF</item>
+        <item name="tabSelectedTextColor">#FFFF</item>
+        <item name="tabTextAppearance">@style/TexteOnglets</item>
+    </style>
+
+    <style name="TexteOnglets" parent="@android:style/TextAppearance">
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">#FFFF</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">Verdana</item>
+    </style>
+
+</resources>

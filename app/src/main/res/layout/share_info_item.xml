@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/share_info_layout"
+    android:background="@color/colorLightGrey"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:adjustViewBounds="true"
+        android:paddingVertical="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/share_info_texte"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="NomInformation"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:paddingTop="40dp"
+            android:gravity="center"
+            android:textAlignment="center"/>
+
+        <TextView
+            android:id="@+id/share_info_subtexte"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="(conseillé)"
+            android:textColor="#FFFFFF"
+            android:textSize="11sp"
+            android:gravity="center"
+            android:textAlignment="center"/>
+
+        <ImageView
+            android:id="@+id/share_info_check"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_check" />
+
+    </LinearLayout>
+
+</RelativeLayout>

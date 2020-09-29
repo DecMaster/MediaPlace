@@ -1,0 +1,104 @@
+<resources>
+    <string name="app_name">Mediaplace</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menuTitle_biblio">Bibliothèques</string>
+    <string name="menuTitle_others">Autres</string>
+    <string name="menuTitle_mediaPlace">MediaPlace</string>
+
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="home_second">Home Second</string>
+
+    <!-- MENU DEROULANT -->
+    <string name="menu_home">Accueil</string>
+    <string name="menu_search">Recherche</string>
+    <string name="menu_actu">Actualités</string>
+    <string name="menu_recommandations">Recommandations</string>
+    <string name="menu_movies">Films</string>
+    <string name="menu_series">Séries</string>
+    <string name="menu_books">Livres</string>
+    <string name="menu_videoGames">Jeux-vidéos</string>
+    <string name="menu_myMovies">Mes Films</string>
+    <string name="menu_mySeries">Mes Séries</string>
+    <string name="menu_myBooks">Mes Livres</string>
+    <string name="menu_myVideoGames">Mes Jeux-vidéos</string>
+    <string name="menu_stats">Statistiques</string>
+    <string name="menu_share">Partager ma biblio</string>
+    <string name="menu_sharePreview">Prévisualisation</string>
+    <string name="menu_options">Options</string>
+    <string name="menu_help">Aide</string>
+
+    <!-- MEDIAS -->
+    <string name="book">livre</string>
+    <string name="movie">film</string>
+    <string name="serie">série</string>
+    <string name="game">jeu</string>
+
+    <!-- PAGE DES OEUVRES -->
+    <string name="work_myDatas">Mes données</string>
+    <string name="work_details">Détails</string>
+    <string name="work_description">Description</string>
+    <string name="work_recommendations">Recommandations</string>
+    <string name="work_state">Statut</string>
+    <string name="work_note">Note</string>
+    <string name="work_link">Lien</string>
+    <string name="work_readMore">Lire la suite…</string>
+    <string name="work_noRecommendation">Aucune recommandation disponible pour cette oeuvre.</string>
+    <string name="work_notInBiblio">Cette oeuvre n\'est pas encore dans votre bibliothèque</string>
+    <string name="work_addInBiblio">Ajouter à ma bibliothèque</string>
+
+    <!-- ONGLETS BIBLIO -->
+    <string name="onglet_tous">Tous</string>
+    <string name="onglet_termines">Terminés</string>
+    <string name="onglet_encours">En cours</string>
+    <string name="onglet_planifie">Planifiés</string>
+    <string name="onglet_abandonne">De côté</string>
+    <string name="onglet_favoris">Favoris</string>
+
+    <!-- MESSAGES BIBLIO VIDE -->
+    <string name="biblio_noElement_message">C\'est bien vide ici !\nAjoute des oeuvres grâce à la fonction recherche</string>
+    <string name="biblio_noMovie">Votre bibliothèque de films est vide.\nVous pouvez ajouter des oeuvres grâce à la fonction</string>
+    <string name="biblio_noShow">Votre bibliothèque de séries est vide.\nVous pouvez ajouter des oeuvres grâce à la fonction</string>
+    <string name="biblio_noGame">Votre bibliothèque de jeux est vide.\nVous pouvez ajouter des oeuvres grâce à la fonction</string>
+    <string name="biblio_noBook">Votre bibliothèque de livres est vide.\nVous pouvez ajouter des oeuvres grâce à la fonction</string>
+    <string name="biblio_lienRecherche">Ajoutez plus d\'oeuvres à votre bibliothèque\n grâce à la fonction</string>
+    <string name="biblio_recherche">recherche</string>
+
+    <!-- OPTIONS DE TRI -->
+    <string name="tri_alphabetique">De A à Z</string>
+    <string name="tri_alphabetique_inverse">De Z à A</string>
+    <string name="tri_date_ajout">Date d\'ajout</string>
+    <string name="tri_date_sortie">Date de sortie</string>
+    <string name="tri_note">Note</string>
+
+    <!-- PAGE RECHERCHE -->
+    <string name="veuillez_patienter">Veuillez patienter</string>
+    <string name="cliqueLoupe">Cliquez sur la loupe pour débuter une recherche</string>
+    <string name="no_connection">Aucune connexion internet trouvée.\nVeuillez vous connecter pour effectuer une recherche.</string>
+    <string name="no_result">Aucun résultat</string>
+
+    <!-- PAGE SHARE -->
+    <string name="share_message1">1 - Quelles bibliothèques souhaitez-vous partager ?</string>
+    <string name="share_message2">3 - Quelles informations souhaitez-vous partager ?</string>
+    <string name="share_message3">4 - Quel nom souhaitez-vous donner à ce partage ?</string>
+    <string name="share_message4">2 - Quelle catégorie souhaitez-vous partager ?</string>
+    <string name="share_tooltip">ex : Mes films préférés, Bibliothèque de VotreNom</string>
+    <string name="share_mention">Créé avec l\'application MediaPlace</string>
+    <string name="share_buttonText">Partager</string>
+    <string name="share_setupNonValide">Veuillez sélectionner au moins une bibliothèque et une information.</string>
+    <string name="share_stockageNonValide">Impossible de partager le fichier, la mémoire de votre téléphone est saturée.</string>
+    <string name="share_defaultTitle">Ma bibliothèque</string>
+    <string name="share_previewIndic">Prévisualisation du partage</string>
+    <string name="share_emptyBiblio">Bibliothèque vide</string>
+    <!-- HOME PAGE -->
+    <string name="welcome_page_research">Chercher une oeuvre</string>
+    <string name="resarch_default_value">Nom, auteur...</string>
+    <string name="welcome_page_biblio">Accéder à une bibliothèque </string>
+
+</resources>

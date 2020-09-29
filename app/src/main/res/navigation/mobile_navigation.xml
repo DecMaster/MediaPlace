@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="nf28.mediaplace.ui.home.HomeFragment"
+        android:label="@string/app_name"
+        tools:layout="@layout/fragment_home">
+
+        <action
+            android:id="@+id/home_to_books_biblio"
+            app:destination="@id/nav_books" />
+        <action
+            android:id="@+id/home_to_videoGames_biblio"
+            app:destination="@id/nav_videoGames" />
+        <action
+            android:id="@+id/home_to_movies_biblio"
+            app:destination="@id/nav_movies" />
+        <action
+            android:id="@+id/home_to_series_biblio"
+            app:destination="@id/nav_series" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_books"
+        android:name="nf28.mediaplace.ui.biblio.BooksBiblioFragment"
+        android:label="@string/menu_myBooks"
+        tools:layout="@layout/fragment_biblio">
+
+        <action
+            android:id="@+id/books_biblio_to_work"
+            app:destination="@id/nav_work">
+            <argument
+                android:name="currentWork"
+                app:argType="nf28.mediaplace.Models.Oeuvre" />
+        </action>
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_videoGames"
+        android:name="nf28.mediaplace.ui.biblio.VideoGamesBiblioFragment"
+        android:label="@string/menu_myVideoGames"
+        tools:layout="@layout/fragment_biblio">
+
+        <action
+            android:id="@+id/videoGames_biblio_to_work"
+            app:destination="@id/nav_work">
+            <argument
+                android:name="currentWork"
+                app:argType="nf28.mediaplace.Models.Oeuvre" />
+        </action>
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_series"
+        android:name="nf28.mediaplace.ui.biblio.SeriesBiblioFragment"
+        android:label="@string/menu_mySeries"
+        tools:layout="@layout/fragment_biblio">
+
+        <action
+            android:id="@+id/series_biblio_to_work"
+            app:destination="@id/nav_work">
+            <argument
+                android:name="currentWork"
+                app:argType="nf28.mediaplace.Models.Oeuvre" />
+        </action>
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_movies"
+        android:name="nf28.mediaplace.ui.biblio.MoviesBiblioFragment"
+        android:label="@string/menu_myMovies"
+        tools:layout="@layout/fragment_biblio">
+
+        <action
+            android:id="@+id/movies_biblio_to_work"
+            app:destination="@id/nav_work">
+            <argument
+                android:name="currentWork"
+                app:argType="nf28.mediaplace.Models.Oeuvre" />
+        </action>
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_work"
+        android:name="nf28.mediaplace.ui.work.WorkFragment"
+        tools:layout="@layout/fragment_work" />
+
+    <fragment
+        android:id="@+id/nav_options"
+        android:name="nf28.mediaplace.ui.others.OptionsFragment"
+        android:label="@string/menu_options"
+        tools:layout="@layout/fragment_options" />
+
+    <fragment
+        android:id="@+id/nav_share"
+        android:name="nf28.mediaplace.ui.share.ShareFragment"
+        android:label="@string/menu_share"
+        tools:layout="@layout/fragment_share" />
+
+    <fragment
+        android:id="@+id/nav_sharePreview"
+        android:name="nf28.mediaplace.ui.share.SharePreviewFragment"
+        android:label="@string/menu_sharePreview"
+        tools:layout="@layout/fragment_share_preview" />
+
+    <fragment
+        android:id="@+id/nav_search"
+        android:name="nf28.mediaplace.ui.search.SearchFragment"
+        android:label="@string/menu_search"
+        tools:layout="@layout/fragment_search">
+
+        <action
+            android:id="@+id/search_to_work"
+            app:destination="@id/nav_work">
+            <argument
+                android:name="currentWork"
+                app:argType="nf28.mediaplace.Models.Oeuvre" />
+        </action>
+    </fragment>
+
+</navigation>

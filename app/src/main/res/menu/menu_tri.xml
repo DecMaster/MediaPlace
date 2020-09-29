@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/option_tri_alpha"
+        android:orderInCategory="100"
+        android:title="@string/tri_alphabetique"
+        />
+    <item
+        android:id="@+id/option_tri_alpha_inverse"
+        android:orderInCategory="100"
+        android:title="@string/tri_alphabetique_inverse"
+        />
+    <item
+        android:id="@+id/option_tri_date_ajout"
+        android:orderInCategory="100"
+        android:title="@string/tri_date_ajout"
+        />
+    <item
+        android:id="@+id/option_tri_date_sortie"
+        android:orderInCategory="100"
+        android:title="@string/tri_date_sortie"
+        />
+    <item
+        android:id="@+id/option_tri_note"
+        android:orderInCategory="100"
+        android:title="@string/tri_note"
+        />
+</menu>

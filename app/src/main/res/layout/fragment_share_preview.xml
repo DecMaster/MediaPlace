@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    tools:context=".ui.share.SharePreviewFragment">
+
+    <ScrollView
+        android:id="@+id/share_preview_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:fillViewport="true"
+        android:scrollbars="none"
+        >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingHorizontal="15dp"
+            >
+
+            <!-- Titre -->
+            <TextView
+                android:id="@+id/share_preview_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/share_defaultTitle"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:layout_marginTop="25dp"
+                android:gravity="center"
+                android:textAlignment="center"/>
+
+            <!-- Films -->
+            <LinearLayout
+                android:id="@+id/shareMovieHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:layout_marginVertical="10dp"
+                android:focusableInTouchMode="true"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_movie"
+                    android:tint="@color/colorMovieBlue"
+                    android:padding="10dp"
+                    android:adjustViewBounds="true"
+                    />
+
+                <TextView
+                    android:id="@+id/shareMovieHeader_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="10dp"
+                    android:text="@string/menu_movies"
+                    android:textColor="@color/colorMovieBlue"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorMovieBlue" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/share_preview_noMovie"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/share_emptyBiblio"
+                android:textColor="#FFFFFF"
+                android:textSize="15sp"
+                android:gravity="center"
+                android:textAlignment="center"/>
+
+            <nf28.mediaplace.Views.NonScrollListView
+                android:id="@+id/shareMovieHeader_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="3dp"
+                android:scrollbars="none"
+                />
+
+            <!-- Séries -->
+            <LinearLayout
+                android:id="@+id/shareSerieHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:layout_marginVertical="10dp"
+                android:focusableInTouchMode="true"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_series"
+                    android:tint="@color/colorShowGreen"
+                    android:adjustViewBounds="true"
+                    android:padding="10dp"
+                    />
+
+                <TextView
+                    android:id="@+id/shareSerieHeader_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="10dp"
+                    android:text="@string/menu_series"
+                    android:textColor="@color/colorShowGreen"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorShowGreen" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/share_preview_noSerie"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/share_emptyBiblio"
+                android:textColor="#FFFFFF"
+                android:textSize="15sp"
+                android:gravity="center"
+                android:textAlignment="center"/>
+
+            <nf28.mediaplace.Views.NonScrollListView
+                android:id="@+id/shareSerieHeader_list"
+                android:layout_width="match_parent"
+                android:paddingHorizontal="3dp"
+                android:layout_height="wrap_content"
+                android:scrollbars="none"
+                />
+
+            <!-- Livres -->
+            <LinearLayout
+                android:id="@+id/shareBookHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:gravity="center"
+                android:layout_marginVertical="10dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_books"
+                    android:tint="@color/colorBookYellow"
+                    android:adjustViewBounds="true"
+                    android:padding="10dp"
+                    />
+
+                <TextView
+                    android:id="@+id/shareBookHeader_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="10dp"
+                    android:text="@string/menu_books"
+                    android:textColor="@color/colorBookYellow"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorBookYellow" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/share_preview_noBook"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/share_emptyBiblio"
+                android:textColor="#FFFFFF"
+                android:textSize="15sp"
+                android:gravity="center"
+                android:textAlignment="center"/>
+
+            <nf28.mediaplace.Views.NonScrollListView
+                android:id="@+id/shareBookHeader_list"
+                android:layout_width="match_parent"
+                android:paddingHorizontal="3dp"
+                android:layout_height="wrap_content"
+                android:scrollbars="none"
+                />
+
+            <!-- Livres -->
+            <LinearLayout
+                android:id="@+id/shareGameHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:layout_marginVertical="10dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_video_games"
+                    android:tint="@color/colorVideoGamesRed"
+                    android:adjustViewBounds="true"
+                    android:padding="10dp"
+                    />
+
+                <TextView
+                    android:id="@+id/shareGameHeader_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="10dp"
+                    android:text="@string/menu_videoGames"
+                    android:textColor="@color/colorVideoGamesRed"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorVideoGamesRed" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/share_preview_noGame"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/share_emptyBiblio"
+                android:textColor="#FFFFFF"
+                android:textSize="15sp"
+                android:gravity="center"
+                android:textAlignment="center"/>
+
+            <nf28.mediaplace.Views.NonScrollListView
+                android:id="@+id/shareGameHeader_list"
+                android:layout_width="match_parent"
+                android:paddingHorizontal="3dp"
+                android:layout_height="wrap_content"
+                android:scrollbars="none"
+                />
+
+            <TextView
+                android:id="@+id/share_preview_mention"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/share_mention"
+                android:layout_gravity="bottom"
+                android:textColor="#FFFFFF"
+                android:textSize="8sp"
+                android:layout_marginVertical="20dp"
+                android:gravity="center"
+                android:textAlignment="center"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/share_accept"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="25dp"
+        app:maxImageSize="30dp"
+        app:backgroundTint="@color/colorShowGreen"
+        app:rippleColor="@color/colorShowGreenMenu"
+        android:clickable="true"
+        app:srcCompat="@drawable/ic_check"
+        android:background="@drawable/rounded_button"
+        android:tint="#FFFFFF"
+        tools:ignore="MissingConstraints,VectorDrawableCompat" />
+
+    <TextView
+        android:id="@+id/share_preview_indic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/share_previewIndic"
+        android:layout_gravity="bottom"
+        android:textColor="#FFFFFF"
+        android:textSize="15sp"
+        android:visibility="gone"
+        android:layout_marginVertical="45dp"
+        android:layout_marginHorizontal="90dp"
+        android:gravity="center"
+        android:textAlignment="center"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/share_return"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|start"
+        android:layout_margin="25dp"
+        app:maxImageSize="30dp"
+        app:backgroundTint="@color/colorVideoGamesRed"
+        app:rippleColor="@color/colorVideoGamesRedMenu"
+        android:clickable="true"
+        app:srcCompat="@drawable/ic_arrow_back_24dp"
+        android:tint="#FFFFFF"
+        tools:ignore="MissingConstraints,VectorDrawableCompat" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

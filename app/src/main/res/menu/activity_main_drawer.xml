@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <item android:title="@string/menuTitle_mediaPlace">
+        <menu>
+            <item
+                android:id="@+id/nav_home"
+                android:icon="@drawable/ic_menu_home"
+                android:title="@string/menu_home" />
+            <item
+                android:id="@+id/nav_search"
+                android:icon="@drawable/ic_menu_search"
+                android:title="@string/menu_search" />
+<!--            <item-->
+<!--                android:id="@+id/nav_actu"-->
+<!--                android:icon="@drawable/ic_menu_actu"-->
+<!--                android:title="@string/menu_actu" />-->
+<!--            <item-->
+<!--                android:id="@+id/nav_recommandations"-->
+<!--                android:icon="@drawable/ic_menu_recommandations"-->
+<!--                android:title="@string/menu_recommandations" />-->
+        </menu>
+    </item>
+
+    <item android:title="@string/menuTitle_biblio">
+        <menu>
+            <item
+                android:id="@+id/nav_movies"
+                android:icon="@drawable/ic_menu_movies"
+                android:title="@string/menu_movies" />
+            <item
+                android:id="@+id/nav_series"
+                android:icon="@drawable/ic_menu_series"
+                android:title="@string/menu_series" />
+            <item
+                android:id="@+id/nav_books"
+                android:icon="@drawable/ic_menu_books"
+                android:title="@string/menu_books" />
+            <item
+                android:id="@+id/nav_videoGames"
+                android:icon="@drawable/ic_menu_videoGames"
+                android:title="@string/menu_videoGames" />
+        </menu>
+    </item>
+
+    <item android:title="@string/menuTitle_others">
+        <menu>
+<!--            <item-->
+<!--                android:id="@+id/nav_stats"-->
+<!--                android:icon="@drawable/ic_menu_stats"-->
+<!--                android:title="@string/menu_stats" />-->
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="@string/menu_share" />
+<!--            <item-->
+<!--                android:id="@+id/nav_options"-->
+<!--                android:icon="@drawable/ic_menu_options"-->
+<!--                android:title="@string/menu_options" />-->
+<!--            <item-->
+<!--                android:id="@+id/nav_help"-->
+<!--                android:icon="@drawable/ic_menu_help"-->
+<!--                android:title="@string/menu_help" />-->
+        </menu>
+    </item>
+</menu>

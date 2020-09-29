@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="44" height="42.824" viewBox="0 0 44 42.824">
+  <defs>
+    <filter id="Icon_feather-star" x="0" y="0" width="44" height="42.824" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Icon_feather-star)">
+    <path id="Icon_feather-star-2" data-name="Icon feather-star" d="M15,3l3.708,7.512L27,11.724l-6,5.844,1.416,8.256L15,21.924l-7.416,3.9L9,17.568,3,11.724l8.292-1.212Z" transform="translate(7 4)" fill="#ffa200" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+  </g>
+</svg>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:background="#444444"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    >
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            >
+
+            <ImageView
+                android:id="@+id/item_cover"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+
+                android:scaleType="fitCenter"
+                android:layout_gravity="center"
+                android:src="@mipmap/placeholder" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="right"
+                >
+
+                <View android:id="@+id/item_rectangleNote"
+                    android:layout_width="40sp"
+                    android:layout_height="25dp"
+                    android:background="#66FF0000"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitCenter"
+                    />
+
+                <TextView
+                    android:id="@+id/item_note"
+                    android:layout_width="40sp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/white"
+                    android:text="10/10"
+                    android:textSize="11sp" />
+            </FrameLayout>
+
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/item_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:text="Titre de l'oeuvre"
+            android:textSize="10sp"
+            android:layout_marginTop="3dp"
+            android:maxLines="2"
+            android:singleLine="true"
+            android:ellipsize="end"
+            />
+
+        <TextView
+            android:id="@+id/biblio_item_subtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Réalisateur, 1990"
+            android:textColor="@android:color/white"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:textSize="8sp"
+            android:singleLine="true"
+            android:maxLines="1"
+            />
+
+</LinearLayout>

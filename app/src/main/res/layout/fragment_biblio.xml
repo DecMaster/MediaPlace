@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:background="#444444"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.biblio.BiblioFragment">
+
+    <!-- Onglets -->
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayout_biblio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/OngletsBiblio"
+        app:tabMode="fixed" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:descendantFocusability="blocksDescendants" >
+
+        <!-- Filigramme -->
+        <ImageView
+            android:id="@+id/biblio_filigram"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxWidth="150dp"
+            android:visibility="visible"
+            android:rotation="-20"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:layout_gravity="bottom|right"
+            android:src="@drawable/movie_icon"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <!-- Affichage de la bibliothèque (oeuvres) -->
+                <nf28.mediaplace.Views.NonScrollGridView
+                    android:id="@+id/grid_biblio"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:columnWidth="100dp"
+                    android:numColumns="3"
+                    android:clipToPadding="false"
+                    android:paddingVertical="30dp"
+                    android:stretchMode="spacingWidthUniform"
+                    android:verticalSpacing="24dp"
+                    android:horizontalSpacing="0dp"/>
+
+                <!-- Message aucune oeuvre -->
+                <TextView
+                    android:id="@+id/text_biblio_noElements"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="30dp"
+                    android:gravity="center"
+                    android:text="@string/share_emptyBiblio"
+                    android:textColor="@android:color/white"
+                    android:textAlignment="center"
+                    android:textSize="15sp" />
+
+                <!-- Message d'ajout d'oeuvre -->
+                <TextView
+                    android:id="@+id/text_biblio_lienRecherche"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="30dp"
+                    android:gravity="center"
+                    android:textColor="@android:color/white"
+                    android:textAlignment="center"
+                    android:text="@string/biblio_lienRecherche"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+    </FrameLayout>
+
+</LinearLayout>

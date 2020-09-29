@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/biblio_option_regarder"
+        android:title="Regarder" />
+    <item android:id="@+id/biblio_option_modifier"
+        android:title="Modifier l'image" />
+    <item android:id="@+id/biblio_option_supprimer"
+        android:title="Supprimer" />
+</menu>
